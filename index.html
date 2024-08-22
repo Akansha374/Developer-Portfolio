@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akansha - Developer Personal Portfolio </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(3, 3, 32);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+            /* height: 100vh;
+            width: 100%; */
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 20px;
+            height: 78px;
+            background-color: rgb(37, 37, 76);
+        }
+
+        /* nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 78px;
+            background-color: rgb(37 37 76);
+
+        } */
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(216, 201, 243);
+            transition: 1ms ease-in-out;
+            font-size: 1.02rem;
+        }
+
+        .left {
+            font-size: 1.2rem;
+
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 55px 0px;
+        }
+
+        .firstSection>div {
+            font-size: 3rem;
+
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+            margin: 130px 0;
+
+        }
+
+        .leftsection .btn {
+            padding: 13px 10px;
+            background-color: rgb(8, 5, 68);
+            color: white;
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-size: medium;
+        }
+
+        .leftsection .Git {
+            background-color: rgb(145, 172, 239);
+            color: rgb(5, 3, 40);
+            cursor: pointer;
+            font-family: 'Poppins', sans-serif;
+            padding: 13px 10px;
+            border: 2px solid white;
+            border-radius: 4px;
+            font-size: medium;
+        }
+
+        .leftsection .buttons {
+            padding: 30px 0;
+        }
+
+        .leftsection .buttons:hover {
+            font-weight: bolder;
+        }
+
+        .rightsection {
+            margin: 38px 0;
+        }
+
+        .purple {
+            color: rgb(193, 139, 244);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(172, 92, 248);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background-color: white;
+            margin: 56px 0;
+            margin-top: 85px;
+            height: 2px;
+            width: 80vw;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 100px;
+            width: 1px;
+            background-color: white;
+            margin: 0px 100px;
+        }
+
+        hr {
+            border: 0;
+            background: #9c97f1;
+            height: 1.2px;
+            margin: 40px 80px;
+        }
+
+        .image-top {
+            position: relative;
+            width: 28px;
+            top: -30px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            font-size: 0.96rem;
+            top: 75px;
+            width: 150px;
+            margin-left: -50px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 90px;
+            color: grey;
+            margin-left: -50px;
+            width: 150px;
+            font-size: 11px;
+        }
+
+        footer {
+            background-color: rgb(8, 8, 56);
+            height: auto;
+        }
+
+        .footer {
+            display: flex;
+            padding: 45px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer-first {
+            width: 225px;
+            font-size: medium;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer-text-center {
+            color: grey;
+            font-size: medium;
+            margin-left: 100px;
+        }
+
+
+        /* MEDIA QUERIES FOR RESPONSIVENESS */
+
+        @media (max-width: 700px) {
+
+
+            nav {
+                background-color: rgb(45, 45, 105);
+                width: max-content;
+                flex-direction: column;
+                margin-top: 0px;
+                /* margin-left: 30px; */
+            }
+
+            .box {
+                flex-direction: column;
+            }
+
+            .firstSection>div {
+                font-size: 28px;
+            }
+
+            .leftsection .buttons {
+                margin-top: 45px;
+            }
+
+            .leftsection {
+                margin: 30px 0;
+            }
+
+            .rightsection img {
+                margin-top: -63px;
+            }
+
+            .secondsection .box {
+                margin-left: 46px;
+            }
+
+            .secondsection .vertical {
+                height: unset;
+            }
+
+            span.text-gray {
+                margin-top: -20px;
+                margin-left: 60px;
+            }
+
+            .secondsection h1 {
+                margin-left: 60px;
+            }
+
+            .vertical-title {
+                left: 79px;
+                top: -7px;
+            }
+
+            .vertical-desc {
+                left: 70px;
+                top: -1px;
+            }
+
+            .image-top {
+                top: 34px;
+            }
+
+            footer {
+                display: none;
+            }
+
+            .firstSection {
+                flex-direction: column-reverse;
+                width: 477px;
+                margin-left: 35px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Akansha's Portfolio</div>
+            <div class="right"></div>
+
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/">About</a></li>
+                <li><a href="/">Services</a></li>
+                <li><a href="/">Projects</a></li>
+                <li><a href="/">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftsection">Hi, My name is <span class="purple">Akansha</span>
+                <div> and I am a passionate </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</a></button>
+                    <button class="Git">Github Profile</button>
+                </div>
+            </div>
+            </div>
+            <div class="rightsection"><img src="developer.webp"></div>
+        </section>
+
+
+        <hr>
+        <section class="secondsection">
+            <span class="text-gray">What I have done so far </span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="html.png">
+                    <div class="vertical-title">
+                        HTML Developer (2010-2013)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam rem illum ut quos
+                        doloribus corrupti quaerat, provident voluptatem sint exercitationem qui ipsa dolore dolorum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="nodejs.png">
+                    <div class="vertical-title">
+                        Node.js Developer (2013-2015)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam rem illum ut quos
+                        doloribus corrupti quaerat, provident voluptatem sint exercitationem qui ipsa dolore dolorum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="front-end.png">
+                    <div class="vertical-title">
+                        FrontEnd Developer (2015-2017)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam rem illum ut quos
+                        doloribus corrupti quaerat, provident voluptatem sint exercitationem qui ipsa dolore dolorum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="browser.png">
+                    <div class="vertical-title">
+                        BackEnd Developer (2017-2019)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam rem illum ut quos
+                        doloribus corrupti quaerat, provident voluptatem sint exercitationem qui ipsa dolore dolorum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="full-stack.png">
+                    <div class="vertical-title">
+                        FullStack Developer (2020-2022)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam rem illum ut quos
+                        doloribus corrupti quaerat, provident voluptatem sint exercitationem qui ipsa dolore dolorum.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="developer.png">
+                    <div class="vertical-title">
+                        Dev-Ops Developer (2022-currently)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, aperiam rem illum ut quos
+                        doloribus corrupti quaerat, provident voluptatem sint exercitationem qui ipsa dolore dolorum.
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Akansha's Developer Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact me</li>
+                    <li>Services</li>
+                    <li>Qualifications</li>
+                </ul>
+            </div>
+
+            <div class="footer-third">
+                <ul>
+                    <li>Blog</li>
+                    <li>Review</li>
+                    <li>Email Id</li>
+                    <li>Linked In</li>
+                    <li>Twitter</li>
+                </ul>
+            </div>
+
+            <!-- <div class="footer-fourth">
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Contact me</li>
+                    <li>Services</li>
+                    <li>Qualifications</li>
+                </ul>
+            </div> -->
+
+            <div class="footer-text-center">
+                www.Akanshasportfolio.com | All rights reserved
+            </div>
+        </div>
+    </footer>
+    <!-- typed.js is a javascript library that allows us to make our typed content in animation form  -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'UI-UX Designer', 'Web Designer', 'Graphic Designer'],
+            typeSpeed: 60,
+            loop: true
+        });
+    </script>
+
+</body>
+
+</html>
